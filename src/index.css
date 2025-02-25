@@ -1,0 +1,82 @@
+/* Sidebar animation */
+.nav-collapse {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav-collapse.collapse-open {
+  display: block;
+  max-height: 500px;
+  /* Adjust max-height as needed */
+  transition: max-height 0.3s ease-in;
+}
+
+.nav-collapse.collapse-close {
+  max-height: 0;
+}
+
+.active {
+  background-color: transparent !important;
+}
+
+#navbarVerticalMenu .nav-link:hover {
+  background-color: transparent !important;
+  color: #1366ff;
+}
+
+.bar-charts-dashboards canvas {
+  width: 100% !important;
+}
+
+/* Target the tooltip class */
+.bubble-chart-dashboard canvas {
+  width: 100% !important;
+}
+
+.dashboard-charts canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+canvas .tooltips{
+  width: 300px !important;
+}
+
+.model-background{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.model-edit-user{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.area-cut{
+ padding-top: 62px;
+ height: auto;
+}
+
+.active-btn{
+  background-color: white;
+}
+
+.model-background-2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 216, 216, .5);
+  z-index: 9999999999999999;
+  top: 0;
+  left: 0;
+}
